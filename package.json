@@ -1,0 +1,53 @@
+{
+  "name": "@pro-script/as-is/plugin/number-validator",
+  "version": "0.0.1",
+  "description": "Check your types at runtime with ESNext syntax by meta programing in node.js and browser with interfaces, strict object and more.",
+  "main": "index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/as-is.common.js",
+      "module": "./dist/as-is.esm.mjs",
+      "browser": "./dist/as-is.browser.js",
+      "default": "./index.mjs"
+    }
+  },
+  "engines": {
+    "node": ">=14.18.3"
+  },
+  "directories": {},
+  "scripts": {
+    "test": "node tests/pro-script.test.mjs",
+    "test:esm": "export NODE_ENV=esm && node tests/pro-script.test.mjs",
+    "test:browser": "npx browser-sync --start --no-online ",
+    "build": "node build.mjs",
+    "build:esm": "export NODE_ENV=esm && node build.mjs",
+    "build:common": "export NODE_ENV=common && node build.mjs",
+    "build:browser": "export NODE_ENV=browser && node build.mjs"
+  },
+  "keywords": [
+  ],
+  "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
+  "license": "MIT",
+  "files": [
+    "*.mjs",
+    "index.html",
+    "/lib/*.*",
+    "/tests/*.*",
+    "/tests/macroTests/*.*",
+    "/vendor/*.*",
+    "/public/*.*",
+    "/dist/*.*",
+    "/lib/types/*.*",
+    "/lib/classes/*.*",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/pro-script/as-is",
+  "bugs": {
+    "url": "https://github.com/pro-script/as-is/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-script/as-is.git"
+  }
+}
