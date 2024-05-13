@@ -1,13 +1,10 @@
 {
-  "name": "@pro-script/as-is/plugin/number-validator",
-  "version": "0.0.1",
-  "description": "Check your types at runtime with ESNext syntax by meta programing in node.js and browser with interfaces, strict object and more.",
+  "name": "@pro-script/as-is-plugins",
+  "version": "0.0.2",
+  "description": "Plugins for @pro-script/as-is",
   "main": "index.mjs",
   "exports": {
     ".": {
-      "require": "./dist/as-is.common.js",
-      "module": "./dist/as-is.esm.mjs",
-      "browser": "./dist/as-is.browser.js",
       "default": "./index.mjs"
     }
   },
@@ -24,8 +21,7 @@
     "build:common": "export NODE_ENV=common && node build.mjs",
     "build:browser": "export NODE_ENV=browser && node build.mjs"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
   "license": "MIT",
   "files": [
@@ -34,12 +30,12 @@
     "README.md",
     "LICENSE"
   ],
-  "homepage": "https://github.com/pro-script/as-is",
+  "homepage": "https://github.com/pro-script/as-is-plugins",
   "bugs": {
-    "url": "https://github.com/pro-script/as-is/issues"
+    "url": "https://github.com/pro-script/as-is-plugins/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pro-script/as-is.git"
+    "url": "git+https://github.com/pro-script/as-is-plugins.git"
   }
 }
