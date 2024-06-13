@@ -1,3 +1,46 @@
+# @pro-script plugins v0.1.0
+## Please read the [@pro-script documentation](https://www.npmjs.com/package/@pro-script/as-is) first
+
+## installation
+
+    npm install @pro-script/as-is-plugins
+
+    src="https://www.unpkg.com/@pro-script/as-is-plugins@0.1.0/"
+
+# Table of contents
+
+- [is the number zero?](#is-the-number-zero)
+- [is the number even?](#is-the-number-even)
+- [is the number odd?](#is-the-number-odd)
+- [is the number positive?](#is-the-number-positive)
+- [is the number negative?](#is-the-number-negative)
+- [is the number a positive integer?](#is-the-number-a-positive-integer)
+- [is the number a negative integer?](#is-the-number-a-negative-integer)
+- [is the number finite?](#is-the-number-finite)
+- [is the value NaN?](#is-the-value-nan)
+- [is the number between min and max?](#is-the-number-between-min-and-max)
+- [is the number greater than the specified value?](#is-the-number-greater-than-the-specified-value)
+- [is the number less than the specified value?](#is-the-number-less-than-the-specified-value)
+- [is the number equal to or greater than the specified value?](#is-the-number-equal-to-or-greater-than-the-specified-value)
+- [is the number equal to or less than the specified value?](#is-the-number-equal-to-or-less-than-the-specified-value)
+- [is the number equal to the specified maximum value?](#is-the-number-equal-to-the-specified-maximum-value)
+- [is the number equal to the specified minimum value?](#is-the-number-equal-to-the-specified-minimum-value)
+- [is the number a multiple of the specified value?](#is-the-number-a-multiple-of-the-specified-value)
+- [is the number a valid port number?](#is-the-number-a-valid-port-number)
+- [is the number a safe integer?](#is-the-number-a-safe-integer)
+- [is the number a valid precision?](#is-the-number-a-valid-precision)
+- [is the number a valid digit count?](#is-the-number-a-valid-digit-count)
+- [is the number a valid ISBN-10?](#is-the-number-a-valid-isbn-10)
+- [is the number a valid ISBN-13?](#is-the-number-a-valid-isbn-13)
+- [is the number a valid EAN?](#is-the-number-a-valid-ean)
+- [is the number a valid SSN?](#is-the-number-a-valid-ssn)
+- [is the number a valid VIN?](#is-the-number-a-valid-vin)
+- [is the number a valid INN (10 digits)?](#is-the-number-a-valid-inn-10-digits)
+- [is the number a valid INN (12 digits)?](#is-the-number-a-valid-inn-12-digits)
+- [is the number a valid GLN?](#is-the-number-a-valid-gln)
+- [is the number a valid IMEI?](#is-the-number-a-valid-imei)
+- [is the number a valid NPI?](#is-the-number-a-valid-npi)
+
 ## The number validators
 
 ## is the number zero?
@@ -11,12 +54,12 @@ as.zero(value) -> value | TypeError: Number is not a(an) value that passed valid
 This function checks if the provided argument (`arg`) is exactly zero.
 
 - **is.zero(arg):**
-    - Returns `true` if `arg` is equal to 0.
-    - Returns `false` if `arg` is not equal to 0.
+  - Returns `true` if `arg` is equal to 0.
+  - Returns `false` if `arg` is not equal to 0.
 
 - **as.zero(arg):**
-    - Returns `value` if `arg` is equal to 0.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to 0.
+  - Returns `value` if `arg` is equal to 0.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to 0.
 
 ```javascript
 is.zero(0);      // Returns true
@@ -37,12 +80,12 @@ as.even(value) -> value | TypeError: Number is not a(an) value that passed valid
 This function checks if the provided argument (`arg`) is an even number.
 
 - **is.even(arg):**
-    - Returns `true` if `arg` is even.
-    - Returns `false` if `arg` is not even.
+  - Returns `true` if `arg` is even.
+  - Returns `false` if `arg` is not even.
 
 - **as.even(arg):**
-    - Returns `value` if `arg` is even.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not even.
+  - Returns `value` if `arg` is even.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not even.
 
 ```javascript
 is.even(2);      // Returns true
@@ -63,12 +106,12 @@ as.odd(value) -> value | TypeError: Number is not a(an) value that passed valida
 This function checks if the provided argument (`arg`) is an odd number.
 
 - **is.odd(arg):**
-    - Returns `true` if `arg` is odd.
-    - Returns `false` if `arg` is not odd.
+  - Returns `true` if `arg` is odd.
+  - Returns `false` if `arg` is not odd.
 
 - **as.odd(arg):**
-    - Returns `value` if `arg` is odd.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not odd.
+  - Returns `value` if `arg` is odd.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not odd.
 
 ```javascript
 is.odd(1);      // Returns true
@@ -89,12 +132,12 @@ as.positive(value) -> value | TypeError: Number is not a(an) value that passed v
 This function checks if the provided argument (`arg`) is a positive number.
 
 - **is.positive(arg):**
-    - Returns `true` if `arg` is positive.
-    - Returns `false` if `arg` is not positive.
+  - Returns `true` if `arg` is positive.
+  - Returns `false` if `arg` is not positive.
 
 - **as.positive(arg):**
-    - Returns `value` if `arg` is positive.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not positive.
+  - Returns `value` if `arg` is positive.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not positive.
 
 ```javascript
 is.positive(1.1);      // Returns true
@@ -115,12 +158,12 @@ as.negative(value) -> value | TypeError: Number is not a(an) value that passed v
 This function checks if the provided argument (`arg`) is a negative number.
 
 - **is.negative(arg):**
-    - Returns `true` if `arg` is negative.
-    - Returns `false` if `arg` is not negative.
+  - Returns `true` if `arg` is negative.
+  - Returns `false` if `arg` is not negative.
 
 - **as.negative(arg):**
-    - Returns `value` if `arg` is negative.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not negative.
+  - Returns `value` if `arg` is negative.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not negative.
 
 ```javascript
 is.negative(-1.1);      // Returns true
@@ -141,12 +184,12 @@ as.positiveInteger(value) -> value | TypeError: Number is not a(an) value that p
 This function checks if the provided argument (`arg`) is a positive integer.
 
 - **is.positiveInteger(arg):**
-    - Returns `true` if `arg` is a positive integer.
-    - Returns `false` if `arg` is not a positive integer.
+  - Returns `true` if `arg` is a positive integer.
+  - Returns `false` if `arg` is not a positive integer.
 
 - **as.positiveInteger(arg):**
-    - Returns `value` if `arg` is a positive integer.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a positive integer.
+  - Returns `value` if `arg` is a positive integer.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a positive integer.
 
 ```javascript
 is.positiveInteger(1);      // Returns true
@@ -167,12 +210,14 @@ as.negativeInteger(value) -> value | TypeError: Number is not a(an) value that p
 This function checks if the provided argument (`arg`) is a negative integer.
 
 - **is.negativeInteger(arg):**
-    - Returns `true` if `arg` is a negative integer.
-    - Returns `false` if `arg` is not a negative integer.
+  -
+
+Returns `true` if `arg` is a negative integer.
+- Returns `false` if `arg` is not a negative integer.
 
 - **as.negativeInteger(arg):**
-    - Returns `value` if `arg` is a negative integer.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a negative integer.
+  - Returns `value` if `arg` is a negative integer.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a negative integer.
 
 ```javascript
 is.negativeInteger(-1);      // Returns true
@@ -193,12 +238,12 @@ as.isFinite(value) -> value | TypeError: Number is not a(an) value that passed v
 This function checks if the provided argument (`arg`) is a finite number.
 
 - **is.isFinite(arg):**
-    - Returns `true` if `arg` is finite.
-    - Returns `false` if `arg` is not finite.
+  - Returns `true` if `arg` is finite.
+  - Returns `false` if `arg` is not finite.
 
 - **as.isFinite(arg):**
-    - Returns `value` if `arg` is finite.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not finite.
+  - Returns `value` if `arg` is finite.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not finite.
 
 ```javascript
 is.isFinite(0);      // Returns true
@@ -219,12 +264,12 @@ as.NaN(value) -> value | TypeError: Number is not a(an) value that passed valida
 This function checks if the provided argument (`arg`) is NaN (Not-a-Number).
 
 - **is.NaN(arg):**
-    - Returns `true` if `arg` is NaN.
-    - Returns `false` if `arg` is not NaN.
+  - Returns `true` if `arg` is NaN.
+  - Returns `false` if `arg` is not NaN.
 
 - **as.NaN(arg):**
-    - Returns `value` if `arg` is NaN.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not NaN.
+  - Returns `value` if `arg` is NaN.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not NaN.
 
 ```javascript
 is.NaN(NaN);      // Returns true
@@ -245,14 +290,12 @@ as.between({ arg, min, max }) -> value | TypeError: Number is not a(an) value th
 This function checks if the provided argument (`arg`) is between `min` and `max` values.
 
 - **is.between({ arg, min, max }):**
-    - Returns `true` if `arg` is between `min` and `max`.
-    - Returns `false` if `arg` is not between `min` and
-
-`max`.
+  - Returns `true` if `arg` is between `min` and `max`.
+  - Returns `false` if `arg` is not between `min` and `max`.
 
 - **as.between({ arg, min, max }):**
-    - Returns `value` if `arg` is between `min` and `max`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not between `min` and `max`.
+  - Returns `value` if `arg` is between `min` and `max`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not between `min` and `max`.
 
 ```javascript
 is.between({ arg: 5, min: 0, max: 10 });  // Returns true
@@ -273,12 +316,12 @@ as.greater({ arg, value }) -> value | TypeError: Number is not a(an) value that 
 This function checks if the provided argument (`arg`) is greater than the specified `value`.
 
 - **is.greater({ arg, value }):**
-    - Returns `true` if `arg` is greater than `value`.
-    - Returns `false` if `arg` is not greater than `value`.
+  - Returns `true` if `arg` is greater than `value`.
+  - Returns `false` if `arg` is not greater than `value`.
 
 - **as.greater({ arg, value }):**
-    - Returns `value` if `arg` is greater than `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not greater than `value`.
+  - Returns `value` if `arg` is greater than `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not greater than `value`.
 
 ```javascript
 is.greater({ arg: 15, value: 5 });  // Returns true
@@ -299,12 +342,12 @@ as.less({ arg, value }) -> value | TypeError: Number is not a(an) value that pas
 This function checks if the provided argument (`arg`) is less than the specified `value`.
 
 - **is.less({ arg, value }):**
-    - Returns `true` if `arg` is less than `value`.
-    - Returns `false` if `arg` is not less than `value`.
+  - Returns `true` if `arg` is less than `value`.
+  - Returns `false` if `arg` is not less than `value`.
 
 - **as.less({ arg, value }):**
-    - Returns `value` if `arg` is less than `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not less than `value`.
+  - Returns `value` if `arg` is less than `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not less than `value`.
 
 ```javascript
 is.less({ arg: 5, value: 15 });  // Returns true
@@ -325,12 +368,12 @@ as.equalGreater({ arg, value }) -> value | TypeError: Number is not a(an) value 
 This function checks if the provided argument (`arg`) is equal to or greater than the specified `value`.
 
 - **is.equalGreater({ arg, value }):**
-    - Returns `true` if `arg` is equal to or greater than `value`.
-    - Returns `false` if `arg` is not equal to or greater than `value`.
+  - Returns `true` if `arg` is equal to or greater than `value`.
+  - Returns `false` if `arg` is not equal to or greater than `value`.
 
 - **as.equalGreater({ arg, value }):**
-    - Returns `value` if `arg` is equal to or greater than `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to or greater than `value`.
+  - Returns `value` if `arg` is equal to or greater than `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to or greater than `value`.
 
 ```javascript
 is.equalGreater({ arg: 5, value: 5 });  // Returns true
@@ -351,12 +394,12 @@ as.equalLess({ arg, value }) -> value | TypeError: Number is not a(an) value tha
 This function checks if the provided argument (`arg`) is equal to or less than the specified `value`.
 
 - **is.equalLess({ arg, value }):**
-    - Returns `true` if `arg` is equal to or less than `value`.
-    - Returns `false` if `arg` is not equal to or less than `value`.
+  - Returns `true` if `arg` is equal to or less than `value`.
+  - Returns `false` if `arg` is not equal to or less than `value`.
 
 - **as.equalLess({ arg, value }):**
-    - Returns `value` if `arg` is equal to or less than `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to or less than `value`.
+  - Returns `value` if `arg` is equal to or less than `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to or less than `value`.
 
 ```javascript
 is.equalLess({ arg: 5, value: 5 });  // Returns true
@@ -376,13 +419,15 @@ as.max({ arg, value }) -> value | TypeError: Number is not a(an) value that pass
 
 This function checks if the provided argument (`arg`) is equal to the specified maximum `value`.
 
+
+
 - **is.max({ arg, value }):**
-    - Returns `true` if `arg` is equal to the maximum `value`.
-    - Returns `false` if `arg` is not equal to the maximum `value`.
+  - Returns `true` if `arg` is equal to the maximum `value`.
+  - Returns `false` if `arg` is not equal to the maximum `value`.
 
 - **as.max({ arg, value }):**
-    - Returns `value` if `arg` is equal to the maximum `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to the maximum `value`.
+  - Returns `value` if `arg` is equal to the maximum `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to the maximum `value`.
 
 ```javascript
 is.max({ arg: 5, value: 5 });  // Returns true
@@ -403,12 +448,12 @@ as.min({ arg, value }) -> value | TypeError: Number is not a(an) value that pass
 This function checks if the provided argument (`arg`) is equal to the specified minimum `value`.
 
 - **is.min({ arg, value }):**
-    - Returns `true` if `arg` is equal to the minimum `value`.
-    - Returns `false` if `arg` is not equal to the minimum `value`.
+  - Returns `true` if `arg` is equal to the minimum `value`.
+  - Returns `false` if `arg` is not equal to the minimum `value`.
 
 - **as.min({ arg, value }):**
-    - Returns `value` if `arg` is equal to the minimum `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to the minimum `value`.
+  - Returns `value` if `arg` is equal to the minimum `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not equal to the minimum `value`.
 
 ```javascript
 is.min({ arg: 5, value: 5 });  // Returns true
@@ -429,20 +474,18 @@ as.multiple({ arg, value }) -> value | TypeError: Number is not a(an) value that
 This function checks if the provided argument (`arg`) is a multiple of the specified `value`.
 
 - **is.multiple({ arg, value }):**
-    - Returns `true` if `arg` is a multiple of `value`.
-    - Returns `false` if `arg` is not a multiple of `value`.
+  - Returns `true` if `arg` is a multiple of `value`.
+  - Returns `false` if `arg` is not a multiple of `value`.
 
 - **as.multiple({ arg, value }):**
-    - Returns `value` if `arg` is a multiple of `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a multiple of `value`.
+  - Returns `value` if `arg` is a multiple of `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a multiple of `value`.
 
 ```javascript
 is.multiple({ arg: 15, value: 5 });  // Returns true
 is.multiple({ arg: 14, value: 5 });  // Returns false
 
-as.multiple({ arg:
-
- 15, value: 5 });  // Returns 15
+as.multiple({ arg: 15, value: 5 });  // Returns 15
 as.multiple({ arg: 14, value: 5 });  // Throws TypeError: Number is not a value that passed validation
 ```
 
@@ -457,12 +500,12 @@ as.port(value) -> value | TypeError: Number is not a(an) value that passed valid
 This function checks if the provided argument (`arg`) is a valid port number (between 0 and 65535).
 
 - **is.port(arg):**
-    - Returns `true` if `arg` is a valid port number.
-    - Returns `false` if `arg` is not a valid port number.
+  - Returns `true` if `arg` is a valid port number.
+  - Returns `false` if `arg` is not a valid port number.
 
 - **as.port(arg):**
-    - Returns `value` if `arg` is a valid port number.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid port number.
+  - Returns `value` if `arg` is a valid port number.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid port number.
 
 ```javascript
 is.port(80);      // Returns true
@@ -483,12 +526,12 @@ as.safe(value) -> value | TypeError: Number is not a(an) value that passed valid
 This function checks if the provided argument (`arg`) is a safe integer (within the range of `Number.MIN_SAFE_INTEGER` and `Number.MAX_SAFE_INTEGER`).
 
 - **is.safe(arg):**
-    - Returns `true` if `arg` is a safe integer.
-    - Returns `false` if `arg` is not a safe integer.
+  - Returns `true` if `arg` is a safe integer.
+  - Returns `false` if `arg` is not a safe integer.
 
 - **as.safe(arg):**
-    - Returns `value` if `arg` is a safe integer.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a safe integer.
+  - Returns `value` if `arg` is a safe integer.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a safe integer.
 
 ```javascript
 is.safe(Number.MAX_SAFE_INTEGER);      // Returns true
@@ -509,12 +552,12 @@ as.precision({ arg, value }) -> value | TypeError: Number is not a(an) value tha
 This function checks if the provided argument (`arg`) has the specified precision `value`.
 
 - **is.precision({ arg, value }):**
-    - Returns `true` if `arg` has the specified precision `value`.
-    - Returns `false` if `arg` does not have the specified precision `value`.
+  - Returns `true` if `arg` has the specified precision `value`.
+  - Returns `false` if `arg` does not have the specified precision `value`.
 
 - **as.precision({ arg, value }):**
-    - Returns `value` if `arg` has the specified precision `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` does not have the specified precision `value`.
+  - Returns `value` if `arg` has the specified precision `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` does not have the specified precision `value`.
 
 ```javascript
 is.precision({ arg: 5.22, value: 2 });  // Returns true
@@ -535,12 +578,12 @@ as.digits({ arg, value }) -> value | TypeError: Number is not a(an) value that p
 This function checks if the provided argument (`arg`) has the specified number of digits `value`.
 
 - **is.digits({ arg, value }):**
-    - Returns `true` if `arg` has the specified number of digits `value`.
-    - Returns `false` if `arg` does not have the specified number of digits `value`.
+  - Returns `true` if `arg` has the specified number of digits `value`.
+  - Returns `false` if `arg` does not have the specified number of digits `value`.
 
 - **as.digits({ arg, value }):**
-    - Returns `value` if `arg` has the specified number of digits `value`.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` does not have the specified number of digits `value`.
+  - Returns `value` if `arg` has the specified number of digits `value`.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` does not have the specified number of digits `value`.
 
 ```javascript
 is.digits({ arg: 12345, value: 5 });  // Returns true
@@ -561,12 +604,12 @@ as.ISBN10(value) -> value | TypeError: Number is not a(an) value that passed val
 This function checks if the provided argument (`arg`) is a valid ISBN-10 number.
 
 - **is.ISBN10(arg):**
-    - Returns `true` if `arg` is a valid ISBN-10 number.
-    - Returns `false` if `arg` is not a valid ISBN-10 number.
+  - Returns `true` if `arg` is a valid ISBN-10 number.
+  - Returns `false` if `arg` is not a valid ISBN-10 number.
 
 - **as.ISBN10(arg):**
-    - Returns `value` if `arg` is a valid ISBN-10 number.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid ISBN-10 number.
+  - Returns `value` if `arg` is a valid ISBN-10 number.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid ISBN-10 number.
 
 ```javascript
 is.ISBN10(1234567890);  // Returns true
@@ -579,6 +622,8 @@ as.ISBN10(123456789);   // Throws TypeError: Number is not a value that passed v
 ## is the number a valid ISBN-13?
 ```javascript
 is.ISBN13(value) -> true | false
+
+
 as.ISBN13(value) -> value | TypeError: Number is not a(an) value that passed validation
 ```
 
@@ -587,12 +632,12 @@ as.ISBN13(value) -> value | TypeError: Number is not a(an) value that passed val
 This function checks if the provided argument (`arg`) is a valid ISBN-13 number.
 
 - **is.ISBN13(arg):**
-    - Returns `true` if `arg` is a valid ISBN-13 number.
-    - Returns `false` if `arg` is not a valid ISBN-13 number.
+  - Returns `true` if `arg` is a valid ISBN-13 number.
+  - Returns `false` if `arg` is not a valid ISBN-13 number.
 
 - **as.ISBN13(arg):**
-    - Returns `value` if `arg` is a valid ISBN-13 number.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid ISBN-13 number.
+  - Returns `value` if `arg` is a valid ISBN-13 number.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid ISBN-13 number.
 
 ```javascript
 is.ISBN13(1234567890123);  // Returns true
@@ -613,12 +658,12 @@ as.EAN(value) -> value | TypeError: Number is not a(an) value that passed valida
 This function checks if the provided argument (`arg`) is a valid EAN (European Article Number).
 
 - **is.EAN(arg):**
-    - Returns `true` if `arg` is a valid EAN.
-    - Returns `false` if `arg` is not a valid EAN.
+  - Returns `true` if `arg` is a valid EAN.
+  - Returns `false` if `arg` is not a valid EAN.
 
 - **as.EAN(arg):**
-    - Returns `value` if `arg` is a valid EAN.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid EAN.
+  - Returns `value` if `arg` is a valid EAN.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid EAN.
 
 ```javascript
 is.EAN(1234567890123);  // Returns true
@@ -639,21 +684,19 @@ as.SSN(value) -> value | TypeError: Number is not a(an) value that passed valida
 This function checks if the provided argument (`arg`) is a valid SSN (Social Security Number).
 
 - **is.SSN(arg):**
-    - Returns `true` if `arg` is a valid SSN.
-    - Returns `false` if `arg` is not a valid SSN.
+  - Returns `true` if `arg` is a valid SSN.
+  - Returns `false` if `arg` is not a valid SSN.
 
 - **as.SSN(arg):**
-    - Returns `value` if `arg` is a valid SSN.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid SSN.
+  - Returns `value` if `arg` is a valid SSN.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid SSN.
 
 ```javascript
 is.SSN(123456789);  // Returns true
 is.SSN(12345678);   // Returns false
 
 as.SSN(123456789);  // Returns 123456789
-as.SSN(12345678
-
-);   // Throws TypeError: Number is not a value that passed validation
+as.SSN(12345678);   // Throws TypeError: Number is not a value that passed validation
 ```
 
 ## is the number a valid VIN?
@@ -667,12 +710,12 @@ as.VIN(value) -> value | TypeError: Number is not a(an) value that passed valida
 This function checks if the provided argument (`arg`) is a valid VIN (Vehicle Identification Number).
 
 - **is.VIN(arg):**
-    - Returns `true` if `arg` is a valid VIN.
-    - Returns `false` if `arg` is not a valid VIN.
+  - Returns `true` if `arg` is a valid VIN.
+  - Returns `false` if `arg` is not a valid VIN.
 
 - **as.VIN(arg):**
-    - Returns `value` if `arg` is a valid VIN.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid VIN.
+  - Returns `value` if `arg` is a valid VIN.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid VIN.
 
 ```javascript
 is.VIN(12345678901234567);  // Returns true
@@ -693,12 +736,12 @@ as.INN10(value) -> value | TypeError: Number is not a(an) value that passed vali
 This function checks if the provided argument (`arg`) is a valid INN (Individual Taxpayer Number) with 10 digits.
 
 - **is.INN10(arg):**
-    - Returns `true` if `arg` is a valid INN with 10 digits.
-    - Returns `false` if `arg` is not a valid INN with 10 digits.
+  - Returns `true` if `arg` is a valid INN with 10 digits.
+  - Returns `false` if `arg` is not a valid INN with 10 digits.
 
 - **as.INN10(arg):**
-    - Returns `value` if `arg` is a valid INN with 10 digits.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid INN with 10 digits.
+  - Returns `value` if `arg` is a valid INN with 10 digits.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid INN with 10 digits.
 
 ```javascript
 is.INN10(1234567890);  // Returns true
@@ -719,12 +762,12 @@ as.INN12(value) -> value | TypeError: Number is not a(an) value that passed vali
 This function checks if the provided argument (`arg`) is a valid INN (Individual Taxpayer Number) with 12 digits.
 
 - **is.INN12(arg):**
-    - Returns `true` if `arg` is a valid INN with 12 digits.
-    - Returns `false` if `arg` is not a valid INN with 12 digits.
+  - Returns `true` if `arg` is a valid INN with 12 digits.
+  - Returns `false` if `arg` is not a valid INN with 12 digits.
 
 - **as.INN12(arg):**
-    - Returns `value` if `arg` is a valid INN with 12 digits.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid INN with 12 digits.
+  - Returns `value` if `arg` is a valid INN with 12 digits.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid INN with 12 digits.
 
 ```javascript
 is.INN12(123456789012);  // Returns true
@@ -745,12 +788,12 @@ as.GLN(value) -> value | TypeError: Number is not a(an) value that passed valida
 This function checks if the provided argument (`arg`) is a valid GLN (Global Location Number).
 
 - **is.GLN(arg):**
-    - Returns `true` if `arg` is a valid GLN.
-    - Returns `false` if `arg` is not a valid GLN.
+  - Returns `true` if `arg` is a valid GLN.
+  - Returns `false` if `arg` is not a valid GLN.
 
 - **as.GLN(arg):**
-    - Returns `value` if `arg` is a valid GLN.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid GLN.
+  - Returns `value` if `arg` is a valid GLN.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid GLN.
 
 ```javascript
 is.GLN(1234567890123);  // Returns true
@@ -771,12 +814,12 @@ as.IMEI(value) -> value | TypeError: Number is not a(an) value that passed valid
 This function checks if the provided argument (`arg`) is a valid IMEI (International Mobile Equipment Identity).
 
 - **is.IMEI(arg):**
-    - Returns `true` if `arg` is a valid IMEI.
-    - Returns `false` if `arg` is not a valid IMEI.
+  - Returns `true` if `arg` is a valid IMEI.
+  - Returns `false` if `arg` is not a valid IMEI.
 
 - **as.IMEI(arg):**
-    - Returns `value` if `arg` is a valid IMEI.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid IMEI.
+  - Returns `value` if `arg` is a valid IMEI.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid IMEI.
 
 ```javascript
 is.IMEI(123456789012345);  // Returns true
@@ -794,15 +837,17 @@ as.NPI(value) -> value | TypeError: Number is not a(an) value that passed valida
 
 ### Description
 
-This function checks if the provided argument (`arg`) is a valid NPI (National Provider Identifier).
+This
+
+function checks if the provided argument (`arg`) is a valid NPI (National Provider Identifier).
 
 - **is.NPI(arg):**
-    - Returns `true` if `arg` is a valid NPI.
-    - Returns `false` if `arg` is not a valid NPI.
+  - Returns `true` if `arg` is a valid NPI.
+  - Returns `false` if `arg` is not a valid NPI.
 
 - **as.NPI(arg):**
-    - Returns `value` if `arg` is a valid NPI.
-    - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid NPI.
+  - Returns `value` if `arg` is a valid NPI.
+  - Throws a `TypeError` with message "Number is not a value that passed validation" if `arg` is not a valid NPI.
 
 ```javascript
 is.NPI(1234567890);  // Returns true
