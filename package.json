@@ -1,6 +1,6 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.mjs",
   "exports": {
@@ -13,13 +13,7 @@
   },
   "directories": {},
   "scripts": {
-    "test": "node tests/pro-script.test.mjs",
-    "test:esm": "export NODE_ENV=esm && node tests/pro-script.test.mjs",
-    "test:browser": "npx browser-sync --start --no-online ",
-    "build": "node build.mjs",
-    "build:esm": "export NODE_ENV=esm && node build.mjs",
-    "build:common": "export NODE_ENV=common && node build.mjs",
-    "build:browser": "export NODE_ENV=browser && node build.mjs"
+    "test": "node tests/plugins.test.mjs"
   },
   "keywords": [],
   "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
@@ -37,5 +31,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pro-script/as-is-plugins.git"
+  },
+  "dependencies": {
+    "@pro-script/as-is": "^1.1.1"
   }
 }
