@@ -1,4 +1,4 @@
-import NumbersValidator from './lib/numbers-validator.mjs';
+import { NumbersValidator } from './lib/numbers-validator.mjs';
 import { Checker, BaseInterface, MicroTest, Utility, primitiveTypes, structuralTypes,
     otherTypes, aliasTypes }  from '@pro-script/as-is';
 export const {
