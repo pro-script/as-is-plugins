@@ -1,8 +1,9 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Plugins for @pro-script/as-is",
-  "main": "index.mjs",
+  "main": "index.js",
+  "type": "module",
   "exports": {
     ".": {
       "default": "./index.mjs"
@@ -13,11 +14,11 @@
   },
   "directories": {},
   "scripts": {
-    "test": "node tests/plugins.test.mjs",
-    "build": "node build.mjs",
-    "build:esm": "export NODE_ENV=esm && node build.mjs",
-    "build:common": "export NODE_ENV=common && node build.mjs",
-    "build:browser": "export NODE_ENV=browser && node build.mjs"
+    "test": "node tests/plugins.test.js",
+    "build": "node build.config.js",
+    "build:esm": "export NODE_ENV=esm && node build.config.js",
+    "build:common": "export NODE_ENV=common && node build.config.js",
+    "build:browser": "export NODE_ENV=browser && node build.config.js"
   },
   "keywords": [],
   "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
@@ -25,6 +26,8 @@
   "files": [
     "*.mjs",
     "/lib/*.*",
+    "/tests/*.*",
+    "/documentation/*.*",
     "README.md",
     "LICENSE"
   ],

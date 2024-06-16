@@ -1,23 +1,23 @@
-import { Builder } from './lib/Builder.class.mjs';
+import { Builder } from './lib/Builder.class.js';
 
 export const buildConfig = {
     browser: {
         out: 'fileOut',
         pattern: 'constPattern',
         browserExport: true,
-        path: './dist/proScript.browser.js'
+        path: './dist/numbers.browser.js'
     },
     esm: {
         out: 'fileOut',
         pattern: 'constPattern',
         es6export: true,
-        path: './dist/proScript.esm.mjs'
+        path: './dist/numbers.esm.mjs'
     },
     common: {
         out: 'fileOut',
         pattern: 'constPattern',
         commonExport: true,
-        path: './dist/proScript.common.js'
+        path: './dist/numbers.common.cjs'
     }
 };
 
