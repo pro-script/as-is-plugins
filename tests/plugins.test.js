@@ -1,4 +1,4 @@
-import { as, is, START, STOP, FINISH, CHECK } from '../index.mjs';
+import { as, is, START, STOP, FINISH, CHECK } from '../index.js';
 
 START.all
 {
@@ -36,4 +36,3 @@ START.all
 
 }
 FINISH.all;
-console.log(as.zero(1));
