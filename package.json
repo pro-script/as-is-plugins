@@ -1,12 +1,15 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
   "exports": {
     ".": {
-      "default": "./index.mjs"
+      "require": "./dist/numbers.browser.js",
+      "module": "./dist/numbers.esm.mjs",
+      "browser": "./dist/numbers.browser.js",
+      "default": "./index.js"
     }
   },
   "engines": {
@@ -40,6 +43,6 @@
     "url": "git+https://github.com/pro-script/as-is-plugins.git"
   },
   "dependencies": {
-    "@pro-script/as-is": "^1.1.1"
+    "@pro-script/as-is": "^1.2.1"
   }
 }
