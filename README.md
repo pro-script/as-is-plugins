@@ -1,6 +1,12 @@
 # @pro-script plugins v0.2.0
 ## Please read the [@pro-script documentation](https://www.npmjs.com/package/@pro-script/as-is) first
 
+# Table of contexts
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Validate Numbers](./documentation/numbers.md)
+4. Validate ... (work in progress)
+
 ## installation
 ```bash
 npm install @pro-script/as-is-plugins
@@ -67,6 +73,4 @@ Browser with importmap
 
 ```
 
-# Table of contexts
 
-- [Numbers](./documentation/numbers.md)
