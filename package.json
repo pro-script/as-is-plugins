@@ -1,6 +1,6 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
@@ -23,7 +23,40 @@
     "build:common": "export NODE_ENV=common && node build.config.js",
     "build:browser": "export NODE_ENV=browser && node build.config.js"
   },
-  "keywords": [],
+  "keywords": [
+    "is.zero",
+    "is.zero",
+    "is.even",
+    "is.odd",
+    "is.positive",
+    "is.negative",
+    "is.positiveInteger",
+    "is.negativeInteger",
+    "is.finite",
+    "is.nan",
+    "is.between",
+    "is.greater",
+    "is.less",
+    "is.equalGreater",
+    "is.equalLess",
+    "is.max",
+    "is.min",
+    "is.multiple",
+    "is.port",
+    "is.safe",
+    "is.precision",
+    "is.digits",
+    "is.ISBN10",
+    "is.ISBN13",
+    "is.EAN",
+    "is.SSN",
+    "is.VIN",
+    "is.INN10",
+    "is.INN12",
+    "is.GLN",
+    "is.IMEI",
+    "is.NPI"
+  ],
   "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
   "license": "MIT",
   "files": [
@@ -43,6 +76,6 @@
     "url": "git+https://github.com/pro-script/as-is-plugins.git"
   },
   "dependencies": {
-    "@pro-script/as-is": "^1.2.1"
+    "@pro-script/as-is": "^1.2.3"
   }
 }

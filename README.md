@@ -1,5 +1,11 @@
-# @pro-script plugins v0.2.0
+# @pro-script plugins v0.2
 ## Please read the [@pro-script documentation](https://www.npmjs.com/package/@pro-script/as-is) first
+
+# Table of contexts
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Validate Numbers](./documentation/numbers.md)
+4. Validate ... (work in progress)
 
 ## installation
 ```bash
@@ -7,14 +13,14 @@ npm install @pro-script/as-is-plugins
 ```
 For a browser without module
 ```html
-<script src="https://www.unpkg.com/@pro-script/as-is-plugins@latest/dist/numbers.browser.js"></script>
-<script src="https://www.unpkg.com/@pro-script/as-is@latest/index.js"></script>
+<script src="https://www.unpkg.com/@pro-script/as-is-plugins@latests"></script>
+<script src="https://www.unpkg.com/@pro-script/as-is@latest"></script>
 ````
 For a browser with module
 ```html
 <script type="module">
-    import { Checker } from "https://www.unpkg.com/@pro-script/as-is@latest/index.js";
-    import { NumbersValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins@latest/dist/numbers.esm.mjs";
+    import { Checker } from "https://www.unpkg.com/@pro-script/as-is";
+    import { NumbersValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins";
     
     ...
 </script>
@@ -30,8 +36,8 @@ const { as, is, ... } = new Checker({ integrate: NumbersValidator });
 ```
 Node.js common modules
 ```javascript
-const { Checker } = require('@pro-script/as-is/dist/as-is.common');
-const { NumbersValidator } = require('@pro-script/as-is-plugins/dist/numbers.common');
+const { Checker } = require('@pro-script/as-is');
+const { NumbersValidator } = require('@pro-script/as-is-plugins');
 
 const { as, is, ... } = new Checker({ integrate: NumbersValidator });
 ```
@@ -42,8 +48,8 @@ const { as, is, ... } = new Checker({ integrate: NumbersValidator });
 Browser with module
 ```html
 <script type="module">
-    import { Checker } from "https://www.unpkg.com/@pro-script/as-is@latest/dist/as-is.esm.mjs";
-    import { NumbersValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins@latest/dist/numbers.esm.mjs";
+    import { Checker } from "https://www.unpkg.com/@pro-script/as-is";
+    import { NumbersValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins";
 
     const { as, is, ... } = new Checker({ integrate: NumbersValidator });
 </script>
@@ -53,8 +59,8 @@ Browser with importmap
 <script type="importmap">
   {
     "imports": {
-      "@pro-script/as-is": "https://www.unpkg.com/@pro-script/as-is@latest/dist/as-is.esm.mjs",
-      "@pro-script/as-is-plugins": "https://www.unpkg.com/@pro-script/as-is-plugins@latest/dist/numbers.esm.mjs",
+      "@pro-script/as-is": "https://www.unpkg.com/@pro-script/as-is",
+      "@pro-script/as-is-plugins": "https://www.unpkg.com/@pro-script/as-is-plugins",
     }
   }
 </script>
@@ -66,7 +72,16 @@ Browser with importmap
 </script>
 
 ```
+If for some reason the module isn't switching to the correct URL, make sure to check the dist folder.
+```bash
+@pro-script/as-is@latest/dist/
+  as-is.browser.js
+  as-is.common.js
+  as-is.esm.mjs
+@pro-script/as-is-plugins@latest/dist/
+  numbers.browser.js
+  numbers.common.js
+  numbers.esm.mjs
+```
 
-# Table of contexts
 
-- [Numbers](./documentation/numbers.md)
