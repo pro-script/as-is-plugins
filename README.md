@@ -34,7 +34,8 @@ For a browser with module
 Node.js modules
 ```javascript
 import { Checker } from '@pro-script/as-is';
-import { NumbersValidator } from '@pro-script/as-is-plugins';
+import { NumbersValidator } from '@pro-script/as-is-plugins/numbers';
+import { StringValidator } from '@pro-script/as-is-plugins/strings';
 
 const { as, is, ... } = new Checker({ integrate: Object.assign(NumbersValidator, StringValidator) });
 ```
@@ -54,7 +55,8 @@ Browser with module
 ```html
 <script type="module">
     import { Checker } from "https://www.unpkg.com/@pro-script/as-is";
-    import { NumbersValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins";
+    import { NumbersValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins/numbers";
+    import { StringsValidator } from "https://www.unpkg.com/@pro-script/as-is-plugins/strings";
 
     const { as, is, ... } = new Checker({ integrate: Object.assign(NumbersValidator, StringsValidator) });
 </script>
