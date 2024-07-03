@@ -1,6 +1,6 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.3.21",
+  "version": "0.3.3",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
