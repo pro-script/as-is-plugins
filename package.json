@@ -1,15 +1,22 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.2.4",
+  "version": "0.3.1",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
   "exports": {
     ".": {
+      "default": "./index.js"
+    },
+    "numbers": {
       "require": "./dist/numbers.browser.js",
       "module": "./dist/numbers.esm.mjs",
-      "browser": "./dist/numbers.browser.js",
-      "default": "./index.js"
+      "browser": "./dist/numbers.browser.js"
+    },
+    "strings": {
+      "require": "./dist/strings.browser.js",
+      "module": "./dist/strings.esm.mjs",
+      "browser": "./dist/strings.browser.js"
     }
   },
   "engines": {
@@ -18,10 +25,8 @@
   "directories": {},
   "scripts": {
     "test": "node tests/plugins.test.js",
-    "build": "node build.config.js",
-    "build:esm": "export NODE_ENV=esm && node build.config.js",
-    "build:common": "export NODE_ENV=common && node build.config.js",
-    "build:browser": "export NODE_ENV=browser && node build.config.js"
+    "build:number": "export LIB='./numbers-validator.js' && node numbers.build.config.js",
+    "build:strings": "export LIB='./strings-validator.js' && node strings.build.config.js"
   },
   "keywords": [
     "is.zero",
@@ -55,7 +60,60 @@
     "is.INN12",
     "is.GLN",
     "is.IMEI",
-    "is.NPI"
+    "is.NPI",
+    "is.alphabetic",
+    "is.lowerCase",
+    "is.upperCase",
+    "is.camelCase",
+    "is.snakeCase",
+    "is.kebabCase",
+    "is.trainCase",
+    "is.path",
+    "is.uuid",
+    "is.http",
+    "is.https",
+    "is.url",
+    "is.email",
+    "is.ipv4",
+    "is.ipv6",
+    "is.ip",
+    "is.extension",
+    "is.hex",
+    "is.base64",
+    "is.dataUrl",
+    "is.creditCard",
+    "is.masterCard",
+    "is.visaCard",
+    "is.americanExpress",
+    "is.dinersClub",
+    "is.domain",
+    "is.guid",
+    "is.hostname",
+    "is.isoDate",
+    "is.isoDuration",
+    "is.jwt",
+    "is.emoji",
+    "is.nanoid",
+    "is.cuid",
+    "is.cuid2",
+    "is.excludes",
+    "is.time",
+    "is.datetime",
+    "is.date",
+    "is.hash",
+    "is.isoTimeSecond",
+    "is.isoTimestamp",
+    "is.isoWeek",
+    "is.mac",
+    "is.mac48",
+    "is.mac64",
+    "is.past",
+    "is.future",
+    "is.ascii",
+    "is.base32",
+    "is.base58",
+    "is.before",
+    "is.after"
   ],
   "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
   "license": "MIT",
@@ -76,6 +134,6 @@
     "url": "git+https://github.com/pro-script/as-is-plugins.git"
   },
   "dependencies": {
-    "@pro-script/as-is": "^1.2.3"
+    "@pro-script/as-is": "^1.2.5"
   }
 }

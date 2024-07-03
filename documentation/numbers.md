@@ -1,7 +1,7 @@
 # @pro-script plugins Numbers
 
 
-# Validators of numbers
+# Table of contents
 
 - [is.zero(value)](#is-the-number-zero)
 - [is.even(value)](#is-the-number-even)

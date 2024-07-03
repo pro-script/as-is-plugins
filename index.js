@@ -1,4 +1,5 @@
 import { NumbersValidator } from './dist/numbers.esm.mjs';
+import { StringsValidator } from './lib/strings-validator.js';
 import {
     Checker,
     BaseInterface,
@@ -23,7 +24,13 @@ export const {
     macro,
     strict,
     Enum
-}  = new Checker({ integrate: NumbersValidator });
+}  = new Checker({
+    integrate: Object.assign(NumbersValidator, StringsValidator),
+    'IF/ELSE/END': true,
+    strict: true,
+    Enum: true,
+    utility: true
+});
 
 export const { START, STOP, FINISH, METHOD, PROPERTY, IS, CHECK, passed, failed } = new MicroTest({ is, as });
 
@@ -55,6 +62,6 @@ export default {
     IS,
     CHECK,
     passed,
-    failed
+    failed,
 };
 
