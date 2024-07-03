@@ -6,6 +6,7 @@
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Validate Numbers](./documentation/numbers.md)
+4. [Validate String](./documentation/strings.md)
 4. Validate ... (work in progress)
 
 ## installation
