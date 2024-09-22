@@ -1,6 +1,6 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.3.3",
+  "version": "0.3.5",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
@@ -8,14 +8,14 @@
     ".": {
       "default": "./index.js"
     },
-    "numbers": {
-      "require": "./dist/numbers.browser.js",
-      "module": "./dist/numbers.esm.mjs",
+    "./numbers": {
+      "require": "./dist/numbers.common.cjs",
+      "import": "./dist/numbers.esm.mjs",
       "browser": "./dist/numbers.browser.js"
     },
-    "strings": {
-      "require": "./dist/strings.browser.js",
-      "module": "./dist/strings.esm.mjs",
+    "./strings": {
+      "require": "./dist/strings.common.cjs",
+      "import": "./dist/strings.esm.mjs",
       "browser": "./dist/strings.browser.js"
     }
   },
