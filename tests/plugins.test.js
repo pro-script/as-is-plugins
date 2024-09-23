@@ -67,7 +67,8 @@ START.all
 
     START.strings
     {
-        CHECK['is.alphabetic'](is.alphabetic('abc123'));
+        CHECK['is.alphabetic'](is.alphabetic('abc'));
+        CHECK['is.digit'](is.digit('123'));
         CHECK['is.lowerCase'](is.lowerCase('abc123'));
         CHECK['is.upperCase'](is.upperCase('ABC123'));
         CHECK['is.camelCase'](is.camelCase('camelCaseExample'));
