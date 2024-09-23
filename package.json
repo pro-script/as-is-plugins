@@ -1,22 +1,20 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.3.92",
+  "version": "0.4.0",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
-  "./": {
-    "import": "./index.js",
-    "require": "./index.common.cjs"
-  },
-  "./numbers": {
-    "require": "./dist/numbers.common.cjs",
-    "import": "./dist/numbers.esm.mjs",
-    "browser": "./dist/numbers.browser.js"
-  },
-  "./strings": {
-    "require": "./dist/strings.common.cjs",
-    "import": "./dist/strings.esm.mjs",
-    "browser": "./dist/strings.browser.js"
+  "exports": {
+    "./numbers": {
+      "require": "./dist/numbers.common.cjs",
+      "import": "./dist/numbers.esm.mjs",
+      "browser": "./dist/numbers.browser.js"
+    },
+    "./strings": {
+      "require": "./dist/strings.common.cjs",
+      "import": "./dist/strings.esm.mjs",
+      "browser": "./dist/strings.browser.js"
+    }
   },
   "engines": {
     "node": ">=14.18.3"
@@ -117,7 +115,6 @@
   "author": "Volodymyr Kotov (aka Kotowolod) <kotowolod@gmail.com> UKRAINE",
   "license": "MIT",
   "files": [
-    "*.mjs",
     "/lib/*.*",
     "/tests/*.*",
     "/dist/*.*",
