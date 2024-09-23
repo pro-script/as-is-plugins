@@ -5,7 +5,12 @@ StringsValidator.response = function(arg, result) {
     };
 StringsValidator.alphabetic = function(arg) {
         this.check(arg, 'string', 'primitive');
-        const result = /^[a-zA-Z0-9]+$/.test(arg);
+        const result = /^[a-zA-Z]+$/.test(arg);
+        return this.integrate.response.bind(this)(arg, result);
+    };
+StringsValidator.digit = function(arg) {
+        this.check(arg, 'string', 'primitive');
+        const result = /^[0-9]+$/.test(arg);
         return this.integrate.response.bind(this)(arg, result);
     };
 StringsValidator.lowerCase = function(arg) {
