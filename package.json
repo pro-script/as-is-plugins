@@ -1,6 +1,6 @@
 {
   "name": "@pro-script/as-is-plugins",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Plugins for @pro-script/as-is",
   "main": "index.js",
   "type": "module",
@@ -131,6 +131,7 @@
     "url": "git+https://github.com/pro-script/as-is-plugins.git"
   },
   "dependencies": {
-    "@pro-script/as-is": "^1.3.8"
+    "@pro-script/as-is": "^1.3.9",
+    "terser": "^5.36.0"
   }
 }
