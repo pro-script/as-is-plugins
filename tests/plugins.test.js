@@ -123,6 +123,7 @@ START.all
         CHECK['is.after'](is.after({arg: '2022-01-01T00:00:00Z', value: '2021-12-03T10:15:30Z'}));
         CHECK['is.maxStr'](is.maxStr({arg: '1234567890', value: 10}));
         CHECK['is.minStr'](is.minStr({arg: '123', value: 3}));
+        CHECK['is.password'](is.password('Qwerty123456!'));
     } STOP.strings
 
     START.stringsNegative
