@@ -85,7 +85,8 @@ START.all
         CHECK['is.ipv6'](is.ipv6('2001:0db8:85a3:0000:0000:8a2e:0370:7334'));
         CHECK['is.ip'](is.ip('192.168.0.1'));
         CHECK['is.extension'](is.extension('.txt'));
-        CHECK['is.hex'](is.hex('#ff00ff'));
+        CHECK['is.hexColor'](is.hexColor('#ff00ff'));
+        CHECK['is.hex'](is.hex('0123456789abcdef'));
         CHECK['is.base64'](is.base64('dGhpcyBpcyBhIHRlc3Q='));
         CHECK['is.dataUrl'](is.dataUrl('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA'));
         CHECK['is.creditCard'](is.creditCard('4111111111111111'));
@@ -124,6 +125,9 @@ START.all
         CHECK['is.maxStr'](is.maxStr({arg: '1234567890', value: 10}));
         CHECK['is.minStr'](is.minStr({arg: '123', value: 3}));
         CHECK['is.password'](is.password('Qwerty123456!'));
+        CHECK['is.BcryptHash'](is.BcryptHash('$2b$10$nClVzV6k6kBIUw6hkPp/3.INjQ1l6VAnf7A.PsCUORBocpjsak8Y6'));
+        CHECK['is.ObjectId'](is.ObjectId('67754c64e789608d8bcd6615'));
+        CHECK['is.BcryptHashPassword'](is.BcryptHash('$2b$10$nClVzV6k6kBIUw6hkPp/3.INjQ1l6VAnf7A.PsCUORBocpjsak8Y6'));
     } STOP.strings
 
     START.stringsNegative
