@@ -79,7 +79,7 @@ START.all
         CHECK['is.uuid'](is.uuid('123e4567-e89b-12d3-a456-426614174000'));
         CHECK['is.http'](is.http('http://example.com'));
         CHECK['is.https'](is.https('https://example.com'));
-        CHECK['is.url'](is.url('https://example.com/path#fragment'));
+        CHECK['is.url'](is.url('https://api.dicebear.com/9.x/adventurer/svg?seed=Jude'));
         CHECK['is.email'](is.email('user@example.com'));
         CHECK['is.ipv4'](is.ipv4('192.168.0.1'));
         CHECK['is.ipv6'](is.ipv6('2001:0db8:85a3:0000:0000:8a2e:0370:7334'));
